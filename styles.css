@@ -1,0 +1,218 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    height:100vh;
+}
+
+.main_grid{
+   display: grid;
+   grid-template-columns: 10% 80% 10%;
+   grid-template-rows: 20% 60% 20%;
+   height: 100%;
+   width: 100%;
+}
+
+.attribution{
+    grid-row: 3;
+    grid-column: 2;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.main_grid_card{
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+}
+
+.image{
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    position: relative;
+}
+
+.text{
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 1vh;
+    position: relative;
+}
+
+.text h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 5vh;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding-right: 10vh;
+}
+
+.text p{
+    font-family: 'Inter', sans-serif;
+    font-size: 2vh;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    padding-right: 10vh;
+    line-height: 2;
+}
+
+.accent{
+    color: hsl(277, 64%, 61%);
+}
+
+.size{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 1vh 1vh 0;
+}
+
+.image_overlay{
+    width: 100%;
+    height: 100%;
+    background-color:hsl(277, 74%, 27%);
+    position: absolute;
+    top: 0px;
+    opacity: 55%;
+    border-radius: 0 1vh 1vh 0;
+}
+
+.stats_header{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.stats_header h4{
+    padding-right: 13vh;
+    font-size: 4vh;
+}
+
+.stats_pg{
+    position: absolute;
+    top: 49vh;
+    display: flex;
+    font-size: 2.5vh;
+    font-family: 'Legend Deca', sans-serif;
+    font-weight: 400;
+    color:hsla(0, 0%, 100%, 0.75);
+
+}
+
+.stats_pg h6{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25vh;
+    padding-right: 9.5vh;
+}
+
+@media screen and (max-width: 500px){ 
+    .main_grid{
+        grid-template-rows: 10% auto 10%;
+        height: 100vh;
+    }
+    .card_grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+    }
+
+    .image{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .size{
+        border-radius: 1vh 1vh 0vh 0vh;
+    }
+
+    .image_overlay{
+        border-radius: 1vh 1vh 0vh 0vh;
+    }
+
+    .text{
+        grid-row: 2;
+        box-sizing: border-box;
+        padding: 0vh;
+    }
+
+    .text h3{
+        font-size: 3.5vh;
+        text-align: center;
+        padding-top: 1vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        box-sizing: border-box;
+    }
+
+    .text p{
+        text-align: center;
+        font-size: 2vh;
+        box-sizing: border-box;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .stats_header{
+        display: block;
+        font-family: 'Inter', sans-serif;
+        color: white;
+        padding-bottom: 5vh;
+    }
+    
+    .stats_header h4{
+        padding-right: 0vh;
+        font-size: 3vh;
+        text-align: center;
+        box-sizing: border-box;
+        padding-bottom: 1vh;
+    }
+    
+    .stats_pg{
+        position: absolute;
+        top: 42vh;
+        display: block;
+        font-size: 1.5vh;
+        font-family: 'Legend Deca', sans-serif;
+        font-weight: 400;
+        color:hsla(0, 0%, 100%, 0.75);
+        box-sizing:border-box;
+        text-align: center;
+        width: 100%;
+        padding-left: 17.25vh;
+        padding-right: 15vh;
+    
+    }
+
+    .stats_pg h6{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.25vh;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+
+    .special{
+        padding-left: 2vh;
+    }
+    .attribution{
+        grid-row: 3;
+    }
+}
